@@ -27,7 +27,8 @@
         <li>
             {{employee.name}} - {{employee.role}} <br>
             <button (click)="deleteEmployee($index)">Supprimer</button> -
-            <button (click)="selectEmployee($index)">Modifier</button>
+            <button (click)="selectEmployee($index)">Modifier</button> -
+            <button (click)="selectEmploeeToSee($index)" [routerLink]="['/user-details-component', $index]" routerLinkActive="active" ariaCurrentWhenActive="page">Afficher Détail</button>
         </li>
     }
 </ul>

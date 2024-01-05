@@ -6,8 +6,7 @@ import { UserDetailsComponent } from './user-details/user-details.component';
 
 export const routes: Routes = [
     {path:'crud-component', component: CrudComponent},
-    {path:'calculator-component', component: CalculatorComponent},
-    /*
-    {path:'user-details', component: UserDetailsComponent},
-    {path: '**', component: PageNotFoundComponent }**/
+    {path:'calculator-component', component: CalculatorComponent},    
+    {path:'user-details-component/:id', component: UserDetailsComponent},
+    {path: '**', component: PageNotFoundComponent }
 ];
